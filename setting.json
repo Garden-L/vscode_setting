@@ -1,0 +1,62 @@
+
+// My Setting
+// Font
+"editor.fontFamily": "'Monaco Fira Code', Monaco, monospace, Menlo",
+"editor.fontSize": 15,
+"editor.fontVariations": true,
+"editor.fontWeight": "450",
+"editor.fontLigatures": true,
+"terminal.integrated.fontFamily": "Monaco",
+//vim
+"vim.leader": " ",
+"vim.normalModeKeyBindingsNonRecursive": [
+    // Sidebar and Explorer
+    {
+        // Toggle sidebar and focus explorer with leader+e
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    //Editor split
+    {
+        "before": ["<leader>", "v", "l"],
+        "commands": ["workbench.action.splitEditorToRightGroup"]
+    },
+    {
+        "before": ["<leader>", "v", "h"],
+        "commands": ["workbench.action.splitEditorToLeftGroup"]
+    },
+    {
+        "before": ["<leader>", "s", "j"],
+        "commands": ["workbench.action.splitEditorToBelowGroup"]
+    },
+    {
+        "before": ["<leader>", "s", "k"],
+        "commands": ["workbench.action.splitEditorToAboveGroup"]
+    },
+    {
+        "before": ["<leader>", "w", "d"],
+        "commands": ["workbench.action.decreaseViewWidth"]
+    },
+    {
+        "before": ["<leader>", "w", "u"],
+        "commands": ["workbench.action.increaseViewWidth"]
+    },
+    {
+        "before": ["<leader>", "h", "d"],
+        "commands": ["workbench.action.decreaseViewHeight"]
+    },
+    {
+        "before": ["<leader>", "h", "u"],
+        "commands": ["workbench.action.increaseViewHeight"]
+    },
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+    {
+        "before": ["<"],
+        "after": ["<", "g", "v"]
+    },
+    {
+        "before": [">"],
+        "after": [">", "g", "v"]
+    },
+]
