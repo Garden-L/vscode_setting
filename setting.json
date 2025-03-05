@@ -1,12 +1,32 @@
 
 // My Setting
-// Font
+// cpp와 clangd 충돌 방지를 위함
+"C_Cpp.autocomplete": "disabled",
+"C_Cpp.intelliSenseEngine": "disabled",
+
+// workbench
+"editor.lineNumbers": "relative",
+"editor.renderLineHighlight": "all",
+"workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#b3f50c18",
+    "editor.lineHighlightBorder": "#04fe642e",
+    "tab.activeBackground": "#21821a",
+    "tab.unfocusedActiveBackground": "#6d1f12",
+},
+
+// clangd
+ "clangd.arguments": [
+    "--function-arg-placeholders=0"
+],  
+
+ // Font
 "editor.fontFamily": "'Monaco Fira Code', Monaco, monospace, Menlo",
 "editor.fontSize": 15,
 "editor.fontVariations": true,
 "editor.fontWeight": "450",
 "editor.fontLigatures": true,
 "terminal.integrated.fontFamily": "Monaco",
+
 //vim
 "vim.leader": " ",
 "vim.normalModeKeyBindingsNonRecursive": [
