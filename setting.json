@@ -38,11 +38,11 @@
     },
     //Editor split
     {
-        "before": ["<leader>", "v", "l"],
+        "before": ["<leader>", "s", "l"],
         "commands": ["workbench.action.splitEditorToRightGroup"]
     },
     {
-        "before": ["<leader>", "v", "h"],
+        "before": ["<leader>", "s", "h"],
         "commands": ["workbench.action.splitEditorToLeftGroup"]
     },
     {
