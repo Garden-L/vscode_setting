@@ -149,7 +149,7 @@
             "workbench.action.focusActiveEditorGroup" // 에디터로 포커스 이동
         ]
     },
-    "when": "sideBarFocus"
+    "when": "sideBarVisible"
 },
 //
 // TAB MANAGEMENT
