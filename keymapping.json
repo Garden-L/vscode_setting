@@ -171,11 +171,11 @@
 {
     // "alt+[": Goes to previous editor in group
     "key": "ctrl+shift+[",
-    "command": "workbench.action.previousEditor"
+    "command": "workbench.action.previousEditorInGroup"
 },
 {
     // "alt+]": Goes to next editor in group
     "key": "ctrl+shift+]",
-    "command": "workbench.action.nextEditor"
+    "command": "workbench.action.nextEditorInGroup"
 },
 ]
