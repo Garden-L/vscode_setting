@@ -1,4 +1,3 @@
-
 // My Setting
 // cpp와 clangd 충돌 방지를 위함
 "C_Cpp.autocomplete": "disabled",
@@ -53,6 +52,31 @@
         "before": ["<leader>", "s", "k"],
         "commands": ["workbench.action.splitEditorToAboveGroup"]
     },
+    {
+        // 전체 선택 및 클립보드 복사
+        "before": ["<leader>", "y", "a"],
+        "after" : ["m", "0", "g", "g", "V", "G", "\"", "+", "y", "'", "0"]
+    },
+    {
+        // reg 0 
+        "before": ["<leader>", "p"],
+        "after" : ["\"", "0", "p"]
+    },
+    {
+        // reg 0 
+        "before": ["<leader>", "P"],
+        "after" : ["\"", "0", "P"]
+    },
+    // 강제 종료
+    {
+        "before": ["<leader>", "q", "q"],
+        "commands" : [":q!"]
+    },
+    // 바로 저장
+    {
+        "before": ["<leader>", "w", "w"],
+        "commands" : [":w!"]
+    },
 ],
 "vim.visualModeKeyBindingsNonRecursive": [
     {
@@ -62,5 +86,10 @@
     {
         "before": [">"],
         "after": [">", "g", "v"]
+    },
+    {
+        // 클립보드 복사
+        "before": ["<leader>", "y", "y"],
+        "after" : ["\"", "+", "y"]
     },
 ]
