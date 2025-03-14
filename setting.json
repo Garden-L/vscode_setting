@@ -72,10 +72,28 @@
         "before": ["<leader>", "q", "q"],
         "commands" : [":q!"]
     },
+    // 바로 저장 및 종료
+    {
+        "before": ["<leader>", "w", "q"],
+        "commands" : [":wq!"]
+    },
     // 바로 저장
     {
         "before": ["<leader>", "w", "w"],
         "commands" : [":w!"]
+    },
+    {
+        // 전체 선택 
+        "before": ["<leader>", "v", "a"],
+        "after" : ["g", "g", "V", "G"],
+    },
+    {
+        "before": ["<C-u>"],
+        "commands": ["undo"]
+    },
+    {
+        "before": ["<C-r>"],
+        "commands": ["redo"]
     },
 ],
 "vim.visualModeKeyBindingsNonRecursive": [
